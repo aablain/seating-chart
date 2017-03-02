@@ -1,0 +1,20 @@
+{
+  "classes" : [
+    {"name": "Chem",
+     "image": "https://www.conncoll.edu/media/major-images/Chemistry.jpg",
+     "period": "4th"
+   }, {
+     "name": "Engl",
+     "image": "https://images.unsplash.com/photo-1475243907012-e01b4e4b0a1b?dpr=2&auto=compress,format&fit=crop&w=376&h=251&q=80&cs=tinysrgb&crop=",
+     "period": "3rd"
+   }, {
+     "name": "Hist",
+     "image": "https://images.unsplash.com/photo-1450430463204-6f53fe1c2777?dpr=2&auto=format&fit=crop&w=1080&h=715&q=80&cs=tinysrgb&crop=",
+     "period": "5th"
+   }, {
+     "name": "Musc",
+     "image": "https://images.unsplash.com/photo-1481462585914-9f695507135e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=12408639f23140ff1b2593021803b287",
+     "period": "1st"
+   }
+  ]
+}

@@ -1,0 +1,143 @@
+$dark-grey: #2F2F2F;
+$darker-grey: #232323;
+$off-white: #FAFAFA;
+$white: #FFF;
+$off-black: #0C0805;
+
+body {
+  margin: 0px;
+}
+
+html {
+  padding-top: 0px;
+}
+
+.loginPage {
+  width: 100%;
+  height: 100vh;
+  background-color: $off-black;
+}
+
+.loginbox {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1475092980020-2094a10518d2?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    border: 4px solid #fff;
+    border-radius: 6px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 550px;
+    min-height: 180px;
+    h1 {
+      font-size: 7.2em;
+      font-weight: lighter;
+      color: $white;
+      margin: 0px;
+    }
+  }
+  &__input {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    & > * {
+      width: 40%;
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    & > input:first-of-type {
+      margin-top: 50px;
+    }
+    input {
+      padding: 15px 10px 15px 10px;
+      font-size: 1.2em;
+    }
+    span {
+      background: -webkit-linear-gradient(left top, $dark-grey, $darker-grey); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(bottom right, $dark-grey, $darker-grey); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(bottom right, $dark-grey, $darker-grey); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(to bottom right, $dark-grey, $darker-grey); /* Standard syntax */
+      padding: 15px 12px 15px 12px;
+      color: $white;
+      font-size: 1.5em;
+      text-align: center;
+      width: 40%;
+      user-select: none;
+      &:hover {
+        background: darken($dark-grey, 5);
+        cursor: pointer;
+      }
+      &:active {
+        background: darken($dark-grey, 10);
+      }
+    }
+  }
+}
+
+.classesPage {
+  background-color: $off-white;
+  width: 100%;
+  height: 100vh;
+}
+
+.classesBox {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  //Shared Styles of card/hOne
+  &__hOne, &__card {
+    width: 70%;
+    min-height: 120px;
+    border: 3px solid $off-black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    h1 {
+      font-size: 4.5em;
+      margin: 0px;
+    }
+  }
+
+  //Individual Styles of card/hOne
+  &__card {
+    margin-bottom: 15px;
+    position: relative;
+    &:nth-of-type(n), &:nth-of-type(3n+4) {
+      border-radius: 0px 75px 0px 75px;
+    }
+    &:nth-of-type(3n+1), &:nth-of-type(3n+3) {
+      border-radius: 75px 0px 75px 0px;
+    }
+    // img {
+    //   position: absolute;
+    // }
+  }
+  &__hOne {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+}

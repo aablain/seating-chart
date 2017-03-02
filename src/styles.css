@@ -1,0 +1,114 @@
+body {
+  margin: 0px; }
+
+html {
+  padding-top: 0px; }
+
+.loginPage {
+  width: 100%;
+  height: 100vh;
+  background-color: #0C0805; }
+
+.loginbox {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1475092980020-2094a10518d2?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center; }
+  .loginbox__title {
+    border: 4px solid #fff;
+    border-radius: 6px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 550px;
+    min-height: 180px; }
+    .loginbox__title h1 {
+      font-size: 7.2em;
+      font-weight: lighter;
+      color: #FFF;
+      margin: 0px; }
+  .loginbox__input {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; }
+    .loginbox__input > * {
+      width: 40%;
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .loginbox__input > input:first-of-type {
+      margin-top: 50px; }
+    .loginbox__input input {
+      padding: 15px 10px 15px 10px;
+      font-size: 1.2em; }
+    .loginbox__input span {
+      background: -webkit-linear-gradient(left top, #2F2F2F, #232323);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(bottom right, #2F2F2F, #232323);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(bottom right, #2F2F2F, #232323);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(to bottom right, #2F2F2F, #232323);
+      /* Standard syntax */
+      padding: 15px 12px 15px 12px;
+      color: #FFF;
+      font-size: 1.5em;
+      text-align: center;
+      width: 40%;
+      user-select: none; }
+      .loginbox__input span:hover {
+        background: #222222;
+        cursor: pointer; }
+      .loginbox__input span:active {
+        background: #161616; }
+
+.classesPage {
+  background-color: #FAFAFA;
+  width: 100%;
+  height: 100vh; }
+
+.classesBox {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+  .classesBox__hOne, .classesBox__card {
+    width: 70%;
+    min-height: 120px;
+    border: 3px solid #0C0805;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+    .classesBox__hOne h1, .classesBox__card h1 {
+      font-size: 4.5em;
+      margin: 0px; }
+  .classesBox__card {
+    margin-bottom: 15px;
+    position: relative; }
+    .classesBox__card:nth-of-type(n), .classesBox__card:nth-of-type(3n+4) {
+      border-radius: 0px 75px 0px 75px; }
+    .classesBox__card:nth-of-type(3n+1), .classesBox__card:nth-of-type(3n+3) {
+      border-radius: 75px 0px 75px 0px; }
+  .classesBox__hOne {
+    margin-top: 60px;
+    margin-bottom: 60px; }
+
+/*# sourceMappingURL=styles.css.map */
