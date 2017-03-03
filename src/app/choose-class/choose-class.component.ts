@@ -15,10 +15,12 @@ export class ChooseClassComponent implements OnInit {
   constructor(private router: Router, private classService: ClassService) { }
 
   classes: FirebaseListObservable<any[]>;
+  students: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
 
   ngOnInit() {
     this.classes = this.classService.getClasses();
+    this.students = this.classService.getStudents();
   }
 
   goToThisClassesCharts(clickedClass) {
