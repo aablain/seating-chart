@@ -28,7 +28,7 @@
         <span>28 students</span>
       </div>
       <div class="classPageBox__topBoxes__classActions__chartsButton">
-        <span>CHARTS</span>
+        <span (click)="showThatChartList()">CHARTS</span>
       </div>
       <div class="classPageBox__topBoxes__classActions__buttonsBox">
         <img src="**" alt="">
@@ -36,7 +36,7 @@
         <span>SAVE</span>
       </div>
     </div>
-    <div class="classPageBox__topBoxes__studentCard">
+    <div class="classPageBox__topBoxes__studentCard" (click)="hideTheSidebarPlease()">
       <div class="classPageBox__topBoxes__studentCard__nameAndNogo">
         <h2 class="studentNameGoesHere"></h2>
         <div class="classPageBox__topBoxes__studentCard__nameAndNogo__list">
@@ -54,268 +54,18 @@
 
   <div class="classPageBox__seatingChartBox">
     <div class="classPageBox__seatingChartBox__seatingChart">
-      <div class="classPageBox__seatingChartBox__seatingChart__row" id="1"> // ----Row 1
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot r1c1">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot 2">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot 3">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot 4">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-      </div>
-      <div class="classPageBox__seatingChartBox__seatingChart__row" id="2"> // ----Row 2
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-      </div>
-      <div class="classPageBox__seatingChartBox__seatingChart__row" id="3"> // ----Row 3
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-      </div>
-      <div class="classPageBox__seatingChartBox__seatingChart__row" id="4"> // ----Row 4
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-      </div>
-      <div class="classPageBox__seatingChartBox__seatingChart__row" id="5"> // ----Row 5
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-      </div>
-      <div class="classPageBox__seatingChartBox__seatingChart__row" id="6"> // ----Row 6
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-      </div>
-      <div class="classPageBox__seatingChartBox__seatingChart__row" id="7"> // ----Row 7
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-      </div>
-      <div class="classPageBox__seatingChartBox__seatingChart__row" id="8"> // ----Row 8
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-      </div>
-      <div class="classPageBox__seatingChartBox__seatingChart__row" id="9"> // ----Row 9
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
-
-        </div>
-      </div>
     </div>
   </div>
 
+
+</div>
+
+<div class="classPageBox__sidebar notShown">
+  <span>Charts</span>
+  <div class="classPageBox__sidebar__charts" *ngFor="let chart of (classToDisplay | async)?.charts">
+    <span>{{chart.name}}</span>
+    <div *ngFor="let student of chart.students">
+      <h2>{{student[0]}}</h2>
+    </div>
+  </div>
 </div>
