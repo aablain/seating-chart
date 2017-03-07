@@ -20,4 +20,8 @@ export class ClassService {
     return this.students;
   }
 
+  getClassById(classId: string) {
+    return this.angularFire.database.object('/classes/' + classId);
+  }
+
 }

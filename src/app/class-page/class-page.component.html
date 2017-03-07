@@ -1,3 +1,321 @@
-<p>
-  this is the class-page page yay!
-</p>
+
+<div class="classPageBox">
+
+  <div class="classPageBox__navbox">
+    <div class="classPageBox__navbox__links">
+      <span>Account</span>
+      <span>Classes</span>
+    </div>
+    <div class="classPageBox__navbox__lines">
+      <div class="classPageBox__navbox__lines__linesBox">
+        <hr>
+        <hr>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="classPageBox__topBoxes">
+    <div class="classPageBox__topBoxes__classActions">
+      <div class="classPageBox__topBoxes__classActions__periodBox">
+        <hr>
+        <h1>{{(classToDisplay | async)?.period}}</h1>
+        <hr>
+      </div>
+      <div class="classPageBox__topBoxes__classActions__classAndStudentsBox">
+        <span>{{(classToDisplay | async)?.name}}</span>
+        <span>28 students</span>
+      </div>
+      <div class="classPageBox__topBoxes__classActions__chartsButton">
+        <span>CHARTS</span>
+      </div>
+      <div class="classPageBox__topBoxes__classActions__buttonsBox">
+        <img src="**" alt="">
+        <img src="**" alt="">
+        <span>SAVE</span>
+      </div>
+    </div>
+    <div class="classPageBox__topBoxes__studentCard">
+      <div class="classPageBox__topBoxes__studentCard__nameAndNogo">
+        <h2 class="studentNameGoesHere"></h2>
+        <div class="classPageBox__topBoxes__studentCard__nameAndNogo__list">
+          <ul class="nogoList">
+
+          </ul>
+        </div>
+      </div>
+      <div class="classPageBox__topBoxes__studentCard__studentPicture">
+        <img src="" alt="" class="studentsImage">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="classPageBox__seatingChartBox">
+    <div class="classPageBox__seatingChartBox__seatingChart">
+      <div class="classPageBox__seatingChartBox__seatingChart__row" id="1"> // ----Row 1
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot r1c1">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot 2">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot 3">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot 4">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+      </div>
+      <div class="classPageBox__seatingChartBox__seatingChart__row" id="2"> // ----Row 2
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+      </div>
+      <div class="classPageBox__seatingChartBox__seatingChart__row" id="3"> // ----Row 3
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+      </div>
+      <div class="classPageBox__seatingChartBox__seatingChart__row" id="4"> // ----Row 4
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+      </div>
+      <div class="classPageBox__seatingChartBox__seatingChart__row" id="5"> // ----Row 5
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+      </div>
+      <div class="classPageBox__seatingChartBox__seatingChart__row" id="6"> // ----Row 6
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+      </div>
+      <div class="classPageBox__seatingChartBox__seatingChart__row" id="7"> // ----Row 7
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+      </div>
+      <div class="classPageBox__seatingChartBox__seatingChart__row" id="8"> // ----Row 8
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+      </div>
+      <div class="classPageBox__seatingChartBox__seatingChart__row" id="9"> // ----Row 9
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+        <div class="classPageBox__seatingChartBox__seatingChart__row__seatSpot">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -13,7 +13,7 @@ const appRoutes: Routes = [ {
     component: ChooseClassComponent
   },
   {
-    path: 'class/:id',
+    path: 'classes/:id',
     component: ClassPageComponent
   }
 ];

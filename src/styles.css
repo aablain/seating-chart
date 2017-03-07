@@ -75,7 +75,7 @@ html {
 .classesPage {
   background-color: #FAFAFA;
   width: 100%;
-  height: 100vh; }
+  height: 100%; }
 
 .classesBox {
   max-width: 600px;
@@ -110,5 +110,128 @@ html {
   .classesBox__hOne {
     margin-top: 60px;
     margin-bottom: 60px; }
+
+.classPageBox {
+  width: 680px;
+  height: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .classPageBox__navbox {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .classPageBox__navbox__links {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      flex-basis: 50%; }
+      .classPageBox__navbox__links span {
+        font-size: 1.4em;
+        margin-left: 10%;
+        margin-right: 10%; }
+    .classPageBox__navbox__lines {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center; }
+      .classPageBox__navbox__lines__linesBox {
+        flex-basis: 50px;
+        height: 40px;
+        position: relative; }
+        .classPageBox__navbox__lines__linesBox hr {
+          width: 30px;
+          height: 3px;
+          border: none;
+          border-radius: 1px;
+          background-color: #0C0805;
+          margin-top: 6px;
+          margin-bottom: 6px;
+          position: absolute;
+          transition: all 300ms ease-in-out; }
+          .classPageBox__navbox__lines__linesBox hr:first-of-type {
+            top: 5px; }
+          .classPageBox__navbox__lines__linesBox hr:last-of-type {
+            top: 25px; }
+          .classPageBox__navbox__lines__linesBox hr:nth-of-type(2) {
+            top: 15px; }
+        .classPageBox__navbox__lines__linesBox:hover hr:first-of-type {
+          transform: rotate(40deg);
+          top: 10px; }
+        .classPageBox__navbox__lines__linesBox:hover hr:last-of-type {
+          transform: rotate(-40deg);
+          top: 10px; }
+        .classPageBox__navbox__lines__linesBox:hover hr:nth-of-type(2) {
+          top: 25px; }
+  .classPageBox__topBoxes {
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .classPageBox__topBoxes__classActions {
+      justify-content: space-around;
+      flex-basis: 43%;
+      margin-left: 1%;
+      margin-right: 1%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .classPageBox__topBoxes__classActions__periodBox {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; }
+        .classPageBox__topBoxes__classActions__periodBox h1 {
+          font-size: 3.5em;
+          margin: 0px; }
+        .classPageBox__topBoxes__classActions__periodBox hr {
+          width: 20%;
+          height: 2px;
+          background-color: #0C0805;
+          border: none; }
+      .classPageBox__topBoxes__classActions__classAndStudentsBox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        .classPageBox__topBoxes__classActions__classAndStudentsBox span {
+          font-size: 1.8em; }
+      .classPageBox__topBoxes__classActions__chartsButton {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+        .classPageBox__topBoxes__classActions__chartsButton span {
+          text-align: center;
+          padding: 7px;
+          width: 100%;
+          background-color: #0C0805;
+          color: #FFF;
+          font-size: 1.3em; }
+      .classPageBox__topBoxes__classActions__buttonsBox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center; }
+        .classPageBox__topBoxes__classActions__buttonsBox span {
+          padding: 3px;
+          background-color: #d8d8d8;
+          color: #0C0805; }
+    .classPageBox__topBoxes__studentCard {
+      border: 1px solid #0C0805;
+      height: 100%;
+      flex-basis: 48%;
+      margin-left: 1%;
+      margin-right: 1%; }
 
 /*# sourceMappingURL=styles.css.map */

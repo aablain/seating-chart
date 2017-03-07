@@ -24,7 +24,7 @@ export class ChooseClassComponent implements OnInit {
   }
 
   goToThisClassesCharts(clickedClass) {
-    this.router.navigate(['class', clickedClass.$key]);
+    this.router.navigate(['classes', clickedClass.$key]);
   }
 
 }
