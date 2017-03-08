@@ -17,6 +17,7 @@ export class ClassPageComponent implements OnInit {
 
   classId: string;
   classToDisplay: FirebaseObjectObservable<Class>;
+  classToCall: FirebaseObjectObservable<Class>;
   @Input() selectedClass;
 
   constructor(
@@ -43,15 +44,35 @@ export class ClassPageComponent implements OnInit {
   showThatChartList() {
     $(".notShown").addClass("showing");
     $(".notShown").removeClass("notShown");
+    $(".coverBox").addClass("displaysCoverBox");
   }
 
   hideTheSidebarPlease() {
+    console.log(this);
     if ($(".classPageBox__sidebar").hasClass("showing") === true) {
       $(".showing").addClass("notShown");
       $(".showing").removeClass("showing");
-    } else {
-      
+      $(".coverBox").removeClass("displaysCoverBox");
     }
+  }
+
+  showTheNavbar() {
+    if ($(".classPageBox__navbox").hasClass("navhidden") === true) {
+      $(".navhidden").addClass("navshown");
+      $(".navhidden").removeClass("navhidden");
+    } else if ($(".classPageBox__navbox").hasClass("navshown") === true) {
+      $(".navshown").addClass("navhidden");
+      $(".navshown").removeClass("navshown");
+    }
+  }
+
+  showThisChart(chartClicked) {
+    console.log(chartClicked.students.length);
+    console.log();
+    // for (var x; x<chartClicked.students.length; x++) {
+    //   var currentPlace;
+    //   var currentOrder;
+    // }
   }
 
 }

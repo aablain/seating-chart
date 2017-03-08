@@ -3,6 +3,7 @@ $darker-grey: #232323;
 $off-white: #FAFAFA;
 $white: #FFF;
 $off-black: #0C0805;
+$dark-grey: rgb(41, 41, 41);
 $grey: rgb(216, 216, 216);
 
 body {
@@ -156,24 +157,29 @@ html {
   flex-direction: column;
   flex-wrap: wrap;
   position: relative;
-  &__navbox { // -------------------Start of NavBox
+  &__navbox { // -------------------Start of NavBox (technically not in pagebox)
     width: 100%;
-    height: 55px;
+    height: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    transition: background-color 300ms ease-in-out;
+    align-items: center;
+    margin-bottom: 9px;
     &__links {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: flex-start;
+      justify-content: flex-end;
       align-items: center;
       flex-basis: 50%;
       span {
         font-size: 1.4em;
         margin-left: 10%;
         margin-right: 10%;
+        transition: color 150ms ease-in-out;
+        color: $off-white;
         &:hover {
           color: $grey;
         }
@@ -187,8 +193,10 @@ html {
       align-items: center;
       &__linesBox {
         flex-basis: 50px;
+        width: 50px;
         height: 40px;
         position: relative;
+        margin-top: -5px;
         hr {
           width: 30px;
           height: 3px;
@@ -209,21 +217,21 @@ html {
             top: 15px;
           }
         }
-        &:hover {
-          hr {
-            &:first-of-type {
-              transform:rotate(40deg);
-              top: 10px
-            }
-            &:last-of-type {
-              transform:rotate(-40deg);
-              top: 10px;
-            }
-            &:nth-of-type(2) {
-              top: 25px;
-            }
-          }
-        }
+        // &:hover {
+        //   hr {
+        //     &:first-of-type {
+        //       transform:rotate(40deg);
+        //       top: 10px
+        //     }
+        //     &:last-of-type {
+        //       transform:rotate(-40deg);
+        //       top: 10px;
+        //     }
+        //     &:nth-of-type(2) {
+        //       top: 25px;
+        //     }
+        //   }
+        // }
       }
     }
   } // -------------------------------End of NavBox
@@ -276,7 +284,7 @@ html {
           text-align: center;
           padding: 7px;
           width: 100%;
-          background-color: $off-black;
+          background-color: $dark-grey;
           color: $white;
           font-size: 1.3em;
           transition: all 150ms ease-in-out;
@@ -358,13 +366,13 @@ html {
     left: 0px;
     top: 0px;
     height: 100%;
-    width: 220px;
+    width: 270px;
     transition: all 500ms ease-in-out;
     background-color: $off-white;
     > span:first-of-type {
       margin-top: 35px;
-      font-size: 2.4em;
-      padding: 7px 20px;
+      font-size: 2.7em;
+      padding: 9px 22px;
       border: 1px solid $off-black;
       text-align: center;
       width: auto;
@@ -377,7 +385,7 @@ html {
       flex-wrap: wrap;
       align-items: center;
       span {
-        font-size: 2em;
+        font-size: 2.3em;
         padding-top: 8px;
         padding-bottom: 8px;
         text-align: center;
@@ -405,4 +413,58 @@ html {
   left: 0px;
   opacity: 1;
   box-shadow: 0px 0px 150px $off-black;
+  z-index: 2;
+}
+
+.navhidden {
+  background-color: $white;
+  .classPageBox__navbox__links {
+    span {
+      display: none;
+      opacity: 0;
+    }
+  }
+}
+
+.coverBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  display: none;
+}
+
+.displaysCoverBox {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.1);
+  top: 0px;
+  left: 0px;
+}
+
+.navshown {
+  background-color: $dark-grey;
+  .classPageBox__navbox__links {
+    span {
+      display: inline;
+      opacity: 1;
+    }
+  }
+  .classPageBox__navbox__lines {
+    &__linesBox {
+      hr {
+        background-color: $off-white;
+        &:first-of-type {
+          transform:rotate(40deg);
+          top: 10px
+        }
+        &:last-of-type {
+          transform:rotate(-40deg);
+          top: 10px;
+        }
+        &:nth-of-type(2) {
+          top: 25px;
+        }
+      }
+    }
+  }
 }

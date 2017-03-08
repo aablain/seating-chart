@@ -53,13 +53,13 @@ html {
       padding: 15px 10px 15px 10px;
       font-size: 1.2em; }
     .loginbox__input span {
-      background: -webkit-linear-gradient(left top, #2F2F2F, #232323);
+      background: -webkit-linear-gradient(left top, #292929, #232323);
       /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(bottom right, #2F2F2F, #232323);
+      background: -o-linear-gradient(bottom right, #292929, #232323);
       /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(bottom right, #2F2F2F, #232323);
+      background: -moz-linear-gradient(bottom right, #292929, #232323);
       /* For Firefox 3.6 to 15 */
-      background: linear-gradient(to bottom right, #2F2F2F, #232323);
+      background: linear-gradient(to bottom right, #292929, #232323);
       /* Standard syntax */
       padding: 15px 12px 15px 12px;
       color: #FFF;
@@ -68,10 +68,10 @@ html {
       width: 40%;
       user-select: none; }
       .loginbox__input span:hover {
-        background: #222222;
+        background: #1c1c1c;
         cursor: pointer; }
       .loginbox__input span:active {
-        background: #161616; }
+        background: #101010; }
 
 .classesPage {
   background-color: #FAFAFA;
@@ -123,22 +123,27 @@ html {
   position: relative; }
   .classPageBox__navbox {
     width: 100%;
-    height: 55px;
+    height: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+    transition: background-color 300ms ease-in-out;
+    align-items: center;
+    margin-bottom: 9px; }
     .classPageBox__navbox__links {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: flex-start;
+      justify-content: flex-end;
       align-items: center;
       flex-basis: 50%; }
       .classPageBox__navbox__links span {
         font-size: 1.4em;
         margin-left: 10%;
-        margin-right: 10%; }
+        margin-right: 10%;
+        transition: color 150ms ease-in-out;
+        color: #FAFAFA; }
         .classPageBox__navbox__links span:hover {
           color: #d8d8d8; }
     .classPageBox__navbox__lines {
@@ -149,8 +154,10 @@ html {
       align-items: center; }
       .classPageBox__navbox__lines__linesBox {
         flex-basis: 50px;
+        width: 50px;
         height: 40px;
-        position: relative; }
+        position: relative;
+        margin-top: -5px; }
         .classPageBox__navbox__lines__linesBox hr {
           width: 30px;
           height: 3px;
@@ -167,14 +174,6 @@ html {
             top: 25px; }
           .classPageBox__navbox__lines__linesBox hr:nth-of-type(2) {
             top: 15px; }
-        .classPageBox__navbox__lines__linesBox:hover hr:first-of-type {
-          transform: rotate(40deg);
-          top: 10px; }
-        .classPageBox__navbox__lines__linesBox:hover hr:last-of-type {
-          transform: rotate(-40deg);
-          top: 10px; }
-        .classPageBox__navbox__lines__linesBox:hover hr:nth-of-type(2) {
-          top: 25px; }
   .classPageBox__topBoxes {
     flex-basis: 200px;
     display: flex;
@@ -218,7 +217,7 @@ html {
           text-align: center;
           padding: 7px;
           width: 100%;
-          background-color: #0C0805;
+          background-color: #292929;
           color: #FFF;
           font-size: 1.3em;
           transition: all 150ms ease-in-out; }
@@ -279,13 +278,13 @@ html {
     left: 0px;
     top: 0px;
     height: 100%;
-    width: 220px;
+    width: 270px;
     transition: all 500ms ease-in-out;
     background-color: #FAFAFA; }
     .classPageBox__sidebar > span:first-of-type {
       margin-top: 35px;
-      font-size: 2.4em;
-      padding: 7px 20px;
+      font-size: 2.7em;
+      padding: 9px 22px;
       border: 1px solid #0C0805;
       text-align: center;
       width: auto; }
@@ -297,7 +296,7 @@ html {
       flex-wrap: wrap;
       align-items: center; }
       .classPageBox__sidebar__charts span {
-        font-size: 2em;
+        font-size: 2.3em;
         padding-top: 8px;
         padding-bottom: 8px;
         text-align: center;
@@ -318,6 +317,42 @@ html {
 .showing {
   left: 0px;
   opacity: 1;
-  box-shadow: 0px 0px 150px #0C0805; }
+  box-shadow: 0px 0px 150px #0C0805;
+  z-index: 2; }
+
+.navhidden {
+  background-color: #FFF; }
+  .navhidden .classPageBox__navbox__links span {
+    display: none;
+    opacity: 0; }
+
+.coverBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  display: none; }
+
+.displaysCoverBox {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.1);
+  top: 0px;
+  left: 0px; }
+
+.navshown {
+  background-color: #292929; }
+  .navshown .classPageBox__navbox__links span {
+    display: inline;
+    opacity: 1; }
+  .navshown .classPageBox__navbox__lines__linesBox hr {
+    background-color: #FAFAFA; }
+    .navshown .classPageBox__navbox__lines__linesBox hr:first-of-type {
+      transform: rotate(40deg);
+      top: 10px; }
+    .navshown .classPageBox__navbox__lines__linesBox hr:last-of-type {
+      transform: rotate(-40deg);
+      top: 10px; }
+    .navshown .classPageBox__navbox__lines__linesBox hr:nth-of-type(2) {
+      top: 25px; }
 
 /*# sourceMappingURL=styles.css.map */

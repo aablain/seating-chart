@@ -5,10 +5,6 @@
     </div>
     <div *ngFor="let class of classes | async" class="classesBox__card" >
       <h1 (click)="goToThisClassesCharts(class)">{{class.name}}</h1>
-        <div *ngFor="let student of class.students">
-          <span>{{student.name}}</span>
-        </div>
-        <!-- <h4>{{class.students.name}}</h4> -->
     </div>
     <!-- <div class="classBox_card">
       <h1>{{classes[0].name}}</h1>

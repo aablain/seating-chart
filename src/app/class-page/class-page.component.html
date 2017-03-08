@@ -1,19 +1,19 @@
+<div class="classPageBox__navbox navhidden">
+  <div class="classPageBox__navbox__links">
+    <span>Account</span>
+    <span>Classes</span>
+  </div>
+  <div class="classPageBox__navbox__lines">
+    <div class="classPageBox__navbox__lines__linesBox" (click)="showTheNavbar()">
+      <hr>
+      <hr>
+      <hr>
+    </div>
+  </div>
+</div>
 
 <div class="classPageBox">
 
-  <div class="classPageBox__navbox">
-    <div class="classPageBox__navbox__links">
-      <span>Account</span>
-      <span>Classes</span>
-    </div>
-    <div class="classPageBox__navbox__lines">
-      <div class="classPageBox__navbox__lines__linesBox">
-        <hr>
-        <hr>
-        <hr>
-      </div>
-    </div>
-  </div>
 
 
   <div class="classPageBox__topBoxes">
@@ -36,7 +36,7 @@
         <span>SAVE</span>
       </div>
     </div>
-    <div class="classPageBox__topBoxes__studentCard" (click)="hideTheSidebarPlease()">
+    <div class="classPageBox__topBoxes__studentCard">
       <div class="classPageBox__topBoxes__studentCard__nameAndNogo">
         <h2 class="studentNameGoesHere"></h2>
         <div class="classPageBox__topBoxes__studentCard__nameAndNogo__list">
@@ -63,9 +63,13 @@
 <div class="classPageBox__sidebar notShown">
   <span>Charts</span>
   <div class="classPageBox__sidebar__charts" *ngFor="let chart of (classToDisplay | async)?.charts">
-    <span>{{chart.name}}</span>
-    <div *ngFor="let student of chart.students">
+    <span (click)="showThisChart(chart)">{{chart.name}}</span>
+    <!-- <div *ngFor="let student of chart.students">
       <h2>{{student[0]}}</h2>
-    </div>
+    </div> -->
   </div>
+</div>
+
+<div class="coverBox" (click)="hideTheSidebarPlease()">
+
 </div>
