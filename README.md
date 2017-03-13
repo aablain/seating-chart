@@ -2,6 +2,10 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
+## !!!! https://seating-chart-59193.firebaseapp.com/ !!!!
+
+A link to the deployed version of this app (still in development, simply a snapshot as of 3/13/2017)
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
