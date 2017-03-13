@@ -69,10 +69,8 @@ export class ClassPageComponent implements OnInit {
   }
 
   showThisChart(chartClicked) {
-    console.log(chartClicked.students);
     $(".classPageBox__seatingChartBox__seatingChart__row__seatSpot").empty();
     for (var i = 0; i<chartClicked.students.length; i++) {
-      console.log(chartClicked.students[i].place);
       $('.' + chartClicked.students[i].place).append('<span draggable="true">' + chartClicked.students[i].order + '</span>');
     }
   }
