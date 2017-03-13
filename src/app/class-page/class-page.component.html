@@ -31,9 +31,11 @@
         <span (click)="showThatChartList()">CHARTS</span>
       </div>
       <div class="classPageBox__topBoxes__classActions__buttonsBox">
-        <img src="**" alt="">
-        <img src="**" alt="">
-        <span>SAVE</span>
+        <span class="classPageBox__topBoxes__classActions__buttonsBox__newStudentButton">Add Student</span>
+        <div class="classPageBox__topBoxes__classActions__buttonsBox__generateButton" (click)="spinGenerateButton()">
+          <img class="classPageBox__topBoxes__classActions__buttonsBox__generateButton__generateIcon" src="./../../../assets/generateIcon.png">
+        </div>
+        <span class="classPageBox__topBoxes__classActions__buttonsBox__saveButton">SAVE</span>
       </div>
     </div>
     <div class="classPageBox__topBoxes__studentCard">
@@ -64,9 +66,6 @@
   <span>Charts</span>
   <div class="classPageBox__sidebar__charts" *ngFor="let chart of (classToDisplay | async)?.charts">
     <span (click)="showThisChart(chart)">{{chart.name}}</span>
-    <!-- <div *ngFor="let student of chart.students">
-      <h2>{{student[0]}}</h2>
-    </div> -->
   </div>
 </div>
 

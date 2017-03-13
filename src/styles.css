@@ -114,7 +114,7 @@ html {
 
 .classPageBox {
   width: 680px;
-  height: 1080px;
+  height: 880px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -178,7 +178,8 @@ html {
     flex-basis: 200px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-bottom: 15px; }
     .classPageBox__topBoxes__classActions {
       justify-content: space-around;
       flex-basis: 43%;
@@ -229,13 +230,42 @@ html {
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center; }
-        .classPageBox__topBoxes__classActions__buttonsBox span {
+        .classPageBox__topBoxes__classActions__buttonsBox__newStudentButton {
+          padding: 4px;
+          background-color: #61a58a;
+          color: #FAFAFA;
+          border-radius: 2px;
+          transition: all 135ms ease-in-out; }
+          .classPageBox__topBoxes__classActions__buttonsBox__newStudentButton:hover {
+            background-color: #d8d8d8;
+            color: #61a58a; }
+        .classPageBox__topBoxes__classActions__buttonsBox__generateButton {
+          padding: 4px;
+          background-color: #292929;
+          color: #FAFAFA;
+          border-radius: 2px;
+          height: 25px;
+          width: 25px;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          transition: all 135ms ease-in-out; }
+          .classPageBox__topBoxes__classActions__buttonsBox__generateButton__generateIcon {
+            transition: all 850ms ease-in-out;
+            object-fit: scale-down;
+            min-width: 70%;
+            min-height: 70%; }
+          .classPageBox__topBoxes__classActions__buttonsBox__generateButton:hover {
+            background-color: #0C0805; }
+        .classPageBox__topBoxes__classActions__buttonsBox__saveButton {
           padding: 4px;
           background-color: #d8d8d8;
           color: #0C0805;
           border-radius: 2px;
           transition: all 135ms ease-in-out; }
-          .classPageBox__topBoxes__classActions__buttonsBox span:hover {
+          .classPageBox__topBoxes__classActions__buttonsBox__saveButton:hover {
             color: #FAFAFA; }
     .classPageBox__topBoxes__studentCard {
       border: 1px solid #0C0805;
@@ -247,6 +277,7 @@ html {
     margin-top: 20px;
     width: 100%;
     flex-basis: 55%;
+    min-height: 594px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -268,7 +299,12 @@ html {
         .classPageBox__seatingChartBox__seatingChart__row__seatSpot {
           height: 100%;
           flex-basis: 10.7%;
-          border: 1px solid #0C0805; }
+          border: 1px solid #0C0805;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center; }
   .classPageBox__sidebar {
     position: absolute;
     display: flex;
@@ -308,6 +344,9 @@ html {
         .classPageBox__sidebar__charts span:hover {
           background-color: #0C0805;
           color: #FAFAFA; }
+
+.spinIt {
+  transform: rotate(720deg); }
 
 .notShown {
   left: -220px;
